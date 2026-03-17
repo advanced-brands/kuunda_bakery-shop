@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kuunda bakery shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo"> <img src="images/REAL KUUNDA (1).png" alt="Logo"> </div>
+    <a href="#products" class="cta">baking equipment shop</a>
+    <a href="https://beth1207.github.io/kuunda/" class="cta">Order Fresh Bakes</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Bake Like a Pro with Kuunda</h1>
+  <p>Premium baking tools trusted by passionate bakers.</p>
+  
+  <div class="hero-actions">
+    <a href="#products" class="hero-btn">Shop Equipment</a>
+    <a href="https://kuunda-bakery.com" class="secondary-btn">Order Fresh Bakes</a>
+  </div>
+</div>
+
+
+<section id="products" class="products">
+
+<h2>Featured Products</h2>
+<section class="trust">
+  <p>Trusted by home bakers and professionals across Uganda</p>
+</section>
+
+<div class="product-grid">
+
+<div class="card">
+<img src="images/baking pans.jfif">
+<h3>baking pans</h3>
+<p class="price">UGX 25,000</p>
+<button onclick="addToCart('baking pans',25000)">Add to Order</button>
+</div>
+
+<div class="card">
+<img src="images/baking tray.jfif">
+<h3>baking tray</h3>
+<p class="price">UGX 40,000</p>
+<button onclick="addToCart('baking tray',40000)">Add to Order</button>
+</div>
+
+<div class="card">
+<img src="images/cupcake pan.jfif">
+<h3>cupcake pan</h3>
+<p class="price">UGX 10,000</p>
+<button onclick="addToCart('cupcake pan',10000)">Add to Order</button>
+</div>
+
+<div class="card">
+<img src="images/cake knife cutter.jfif">
+<h3>cake knife</h3>
+<p class="price">UGX 18,000</p>
+<button onclick="addToCart('cake knife',18000)">Add to Order</button>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cart-section">
+
+<h2>Your Order</h2>
+
+<ul id="cart"></ul>
+
+<p class="total">Total: $<span id="total">0</span></p>
+
+<button class="whatsapp-btn" onclick="sendOrder()">Order on WhatsApp</button>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Whatsapp store front Template</p>
+<p>Built for small businesses selling through WhatsApp</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
