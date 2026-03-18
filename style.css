@@ -150,6 +150,86 @@ color:#2563eb;
 font-weight:bold;
 }
 
+.recipes {
+  padding: 60px 8%;
+  background: #fff3e0;
+}
+
+.recipes h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-sub {
+  text-align: center;
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+
+/* Horizontal scroll container */
+.recipe-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+/* Hide ugly scrollbar */
+.recipe-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.recipe-card {
+  min-width: 250px;
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  flex-shrink: 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  scroll-snap-align: start;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recipe-card h3 {
+  margin: 10px 0 5px;
+}
+
+.recipe-card p {
+  font-size: 14px;
+}
+
+.recipe-card .price {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #b45309;
+}
+
+.recipe-card button {
+  margin-top: 10px;
+  background: #b45309;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.recipe-scroll {
+  cursor: grab;
+}
+
+.recipe-scroll:active {
+  cursor: grabbing;
+}
+
 .card button{
 margin-top:10px;
 background:#2563eb;

@@ -41,6 +41,7 @@ cart.forEach(item => {
 message += item.product + " - UGX " + item.price + "%0A";
 });
 
+message += "%0AKindly share payment details and recipe access.%0A";
 message += "%0ATotal: UGX " + total;
 
 let phone = "256752566630";
